@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+#container {
+  padding: 30px;
+  position: fixed;
+  background: linear-gradient(
+    30deg,
+    #74458a,
+    #7f4286,
+    #884081,
+    #913d7c,
+    #993b76,
+    #a0396f,
+    #a63868,
+    #ab3861,
+    #af3959,
+    #b23a51,
+    #b43d49,
+    #b54141
+  );
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  padding: 40px 40px;
+}
+
+.header {
+  font-size: 30px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+form {
+  width: 100%;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 4fr 3fr 100px 2fr 2fr;
+  /* flex-direction: column; */
+  column-gap: 20px;
+}
+
+label {
+  display: block;
+  padding-bottom: 7px;
+  font-size: 15px;
+  color: #af3959;
+  font-weight: 500;
+}
+select,
+input {
+  padding: 5px 3px;
+  outline: none !important;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid #b9b9b9;
+}
+
+/* ----- room card ---------- */
+.room_card {
+  padding: 10px 7px;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.room_type {
+  font-size: 18px;
+  padding-bottom: 5px;
+  font-weight: 500;
+  color: #a63868;
+}
+.room_location {
+  font-size: 13px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  right: -20px;
+}
+
+.tags > * {
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 1px 6px;
+  background: #ffffff;
+  border: 1px solid #884081;
+  color: #884081;
+  white-space: pre;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tag_solid {
+  background: #884081 !important;
+  color: #ffffff !important;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 9px !important;
+}
+.room_charge {
+  /* position: absolute; */
+  font-size: 14px;
+  /* top: -13px; */
+  /* right: 20px; */
+  padding: 1px 6px;
+  background: #ffffff;
+  border: 1px solid #884081;
+  color: #884081;
+  white-space: pre;
+  border-radius: 3px;
+}
