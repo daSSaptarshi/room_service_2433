@@ -41,31 +41,6 @@
   padding-bottom: 30px;
 }
 
-form {
-  width: 100%;
-  padding-top: 20px;
-  display: grid;
-  grid-template-columns: 4fr 3fr 100px 2fr 2fr;
-  /* flex-direction: column; */
-  column-gap: 20px;
-}
-
-label {
-  display: block;
-  padding-bottom: 7px;
-  font-size: 15px;
-  color: #af3959;
-  font-weight: 500;
-}
-select,
-input {
-  padding: 5px 3px;
-  outline: none !important;
-  border-radius: 4px;
-  width: 100%;
-  border: 1px solid #b9b9b9;
-}
-
 /* ----- room card ---------- */
 .room_card {
   padding: 10px 7px;

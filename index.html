@@ -1,67 +1,36 @@
 <head>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(document).ready(function()
+    {
+
+    })
+  </script>
 </head>
 
 <body>
   <div id="container">
-    <div class="main">
-      <div class="header">Admin Panel</div>
+    <div
+      class="main"
+      style="width : 500px; left: 50%; transform : translateX(-50%); text-align : center"
+    >
+      <a href="student.html">Student</a>
       <div class="panel">
-        <div class="success">
-
-          <div class="room_card">
-            <div class="info">
-              <div class="room_type">Room With Desk</div>
-              <div class="room_location">Mock Location</div>
-            </div>
-            <div class="tags">
-              <div class="room_charge tag_solid">25 USD</div>
-              <div class="room_availability">Available</div>
-              <div class="room_payment">Not Paid</div>
-            </div>
+        <form>
+          <div>
+            <label for="login_email">Email</label>
+            <input type="text" name="" id="login_email" />
           </div>
-
-          <form>
-            <div>
-              <label for="room_type_input">Choose Room Type</label>
-              <select name="" id="room_type_input">
-                <option value="1">Room Without Desk & Internet</option>
-                <option value="2">Room With Desk</option>
-                <option value="3">Room With Internet</option>
-                <option value="4">Room With Both</option>
-              </select>
-              <label for=""></label>
-            </div>
-            <div>
-              <label for="room_location_input">Location</label>
-              <input type="text" name="" id="room_location_input">
-            </div>
-            <div>
-              <label for="room_rate_input">Monthly Rate</label>
-              <input type="text" name="" id="room_rate_input">
-            </div>
-            <div>
-              <label for="room_payment_input">Payment Status</label>
-              <select name="" id="room_payment_input" disabled>
-                <option value="0">Paid</option>
-                <option value="1" selected>Not Paid</option>
-              </select>
-            </div>
-            <div>
-              <label for="room_availability_input">Availability</label>
-              <select name="" id="room_availability_input" disabled>
-                <option value="0" selected>Available</option>
-                <option value="1">Not Available</option>
-              </select>
-            </div>
-
-
-          </form>
-        </div>
-        <!-- <div class="error">
-          You have already selected a room
-        </div> -->
+          <div>
+            <label for="login_password">Password</label>
+            <input type="password" name="" id="login_password" />
+            <input type="submit" value="Sign In" />
+          </div>
+        </form>
       </div>
     </div>
   </div>
